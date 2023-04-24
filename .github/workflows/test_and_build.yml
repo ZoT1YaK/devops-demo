@@ -1,14 +1,14 @@
 name: CI/CD Pipeline
 
-env:
-  REGISTRY: ghcr.io
-
 on:
   #Manually trigger workflow runs
   workflow_dispatch:
   #Trigger the workflow on push from the master/main branch 
   push:
     branches: [master]
+
+env:
+  REGISTRY: ghcr.io
     
 jobs:
   #Test's job
