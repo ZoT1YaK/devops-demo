@@ -92,5 +92,5 @@ jobs:
             
           - name: 'Build the Docker Image'
             run: 
-              docker build . -t ghcr.io/${{github.actor}}/devops-demo:latest
-              docker push ghcr.io/${{github.actor}}/devops-demo:latest
+              docker build . --tag ${{env.REGISTRY}}/${{github.actor}}/devops-demo:latest
+              docker push ${{env.REGISTRY}}/${{github.actor}}/devops-demo:latest
