@@ -92,5 +92,5 @@ jobs:
             
           - name: 'Build the Docker Image'
             run: 
-              docker build . --tag ${{env.REGISTRY}}/${{github.actor}}/devops-demo:latest
-              docker push ${{env.REGISTRY}}/${{github.actor}}/devops-demo:latest
+              docker build . --tag ${{env.REGISTRY}}/zot1yak/devops-demo:latest
+              docker push ${{env.REGISTRY}}/zot1yak/devops-demo:latest
