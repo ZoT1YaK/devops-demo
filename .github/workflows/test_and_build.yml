@@ -93,4 +93,6 @@ jobs:
           - name: 'Build the Docker Image'
             run: 
               docker build . --tag ${{env.REGISTRY}}/zot1yak/devops-demo:latest
+          - name: 'Push the Docker Image'
+            run:     
               docker push ${{env.REGISTRY}}/zot1yak/devops-demo:latest
